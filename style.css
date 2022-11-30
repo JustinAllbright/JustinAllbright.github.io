@@ -1,0 +1,35 @@
+
+body {
+    background-color: antiquewhite;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-left: 10%;
+    padding-right:10%;
+}
+p {
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
+.information {
+    text-align: center;
+}
+.information a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    margin: 1%;
+}
+.information a:hover {
+    text-decoration: underline;
+}
+
+.theTitle {
+    color:orange;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+    text-align: center;
+}
