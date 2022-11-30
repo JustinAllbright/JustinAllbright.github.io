@@ -1,9 +1,10 @@
 
 body {
-    background-color: antiquewhite;
+    background-color:#f1ded8;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding-left: 10%;
     padding-right:10%;
+    color:#1a212f;
 }
 p {
     padding-left: 5%;
@@ -20,16 +21,24 @@ p {
     padding: 10px;
     margin: 1%;
 }
+.information a img {
+    padding-left: 2px;
+    padding-right: 2px;
+    height: 15px;
+    width: 15px;
+}
 .information a:hover {
     text-decoration: underline;
 }
 
 .theTitle {
-    color:orange;
-    text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;  
+    color:#4c5c66;
     text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.theTitle img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
 }
