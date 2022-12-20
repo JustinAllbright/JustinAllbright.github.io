@@ -1,26 +1,11 @@
-'use strict';
+import App from "./react.js";
 
-const e = React.createElement;
-
-class LikeButton extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { liked: false };
-  }
-
-  render() {
-    if (this.state.liked) {
-      return 'You liked this.';
-    }
-
-    return e(
-      'button',
-      { onClick: () => this.setState({ liked: true }) },
-      'Like'
-    );
-  }
-}
-
-const domContainer = document.querySelector("#ReactTest");
-const root = ReactDOM.createRoot(domContainer);
-root.render(e(LikeButton));
+var root = ReactDOM.createRoot(document.getElementById('ReactTest'));
+root.render(React.createElement(
+  React.Fragment,
+  null,
+  React.createElement(App, null),
+  React.createElement(App, null),
+  React.createElement(App, null),
+  React.createElement(App, null)
+));
