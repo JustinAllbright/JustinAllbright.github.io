@@ -1,17 +1,34 @@
 import Navbar from "./navbar.js";
+import PomodoroClock from "./Projects/PomodoroClock/PomodoroClock.js";
+import Quotes from "./Projects/Quotes/quotes.js"
+import Calculator from "./Projects/Calculator/Calculator.js"
+import Drums from "./Projects/Drums/drums.js"
+import Markdown from "./Projects/Markdown/markdown.js"
 class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            CurrentTag: "None"
+            CurrentTag: ""
         }
+        this.navigationLocation = this.navigationLocation.bind(this);
+    }
+
+    navigationLocation(event) {
+        this.setState({
+            CurrentTag: event.target.innerHTML
+        })
     }
     render() {
         return(
-            <div>
-            <Navbar/>
+            <React.Fragment>
+            <Navbar navigationLocation = {this.navigationLocation}/>
             <p>Current selected tag: {this.state.CurrentTag}</p>
-            </div>
+            {this.state.CurrentTag == "Calculator" && <Calculator/>}
+            {this.state.CurrentTag == "PomodoroClock" && <PomodoroClock/>}
+            {this.state.CurrentTag == "Markdown" && <Markdown/>}
+            {this.state.CurrentTag == "Drums" && <Drums/>}
+            {this.state.CurrentTag == "Quotes" && <Quotes/>}
+            </React.Fragment>
         )
     }
 }

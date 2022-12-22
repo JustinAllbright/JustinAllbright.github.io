@@ -3,22 +3,16 @@ class Navbar extends React.Component {
     constructor(props) {
         super(props)
     }
-    handleClick(event) {
-        this.setState({
-            CurrentTag: event.li.getAttribute('keyname')
-        })
-    }
     render() {
+        const listItems = ['Calculator', 'Quotes', 'PomodoroClock', 'Markdown', 'Drums'];
         return (
-            <div>
+            <React.Fragment>
                 <ul>
-                    <li onClick={this.handleClick}>Calculator</li>
-                    <li onClick={this.handleClick}>Quotes</li>
-                    <li onClick={this.handleClick}>Pomodoro Clock</li>
-                    <li onClick={this.handleClick}>Markdown</li>
-                    <li onClick={this.handleClick}>Drums</li>
+                    {listItems.map((item) => {
+                        return (<li key={item} onClick={this.props.navigationLocation}>{item}</li>)
+                    })}
                 </ul>
-            </div>
+            </React.Fragment>
         )
     }
 }

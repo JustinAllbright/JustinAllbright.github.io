@@ -79,3 +79,20 @@ h2 {
     margin: 10px;
     color: #f2ded8;
 }
+
+/* #ReactProjects ul {
+
+} */
+
+#ReactProjects ul li {
+    color: black;
+    display: inline;
+    padding: 5px;
+}
+
+#ReactProjects ul li:hover {
+    color: white;
+    display: inline;
+    padding: 5px;
+    cursor:pointer;
+}
