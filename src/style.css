@@ -96,3 +96,8 @@ h2 {
     padding: 5px;
     cursor:pointer;
 }
+
+#quote-box {
+    background: white;
+    color: black;
+}
