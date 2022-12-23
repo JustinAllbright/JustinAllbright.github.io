@@ -1,14 +1,21 @@
 html {
 }
 
+:root {
+    --BgColor: #38405F;
+    --HighlightColor: #FF0035
+}
+
 body {
     /* background-color:#f1ded8; */
-    background-color:#f1ded8;
+    background-color: var(--BgColor);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding-left: 10%;
     padding-right:10%;
-    color:#1a212f;
+    color:white;
+
 }
+
 p {
     padding-left: 5%;
     padding-right: 5%;
@@ -28,10 +35,11 @@ h2 {
 }
 .information a {
     text-decoration: none;
-    color: black;
+    color: white;
     /* background-color: #72454b; */
     border-radius: 20px;
     padding: 15px;
+    background-color: #38405F;
 }
 .information a img {
     transform: translate(0px, 7px);
@@ -40,11 +48,12 @@ h2 {
     padding-right: 5px;
 }
 .information a:hover {
-    background-color: #b93644;
+    background-color: var(--HighlightColor);
+    transition: 0.08s;
 }
 
 .theTitle {
-    color:#4c5c66;
+    color: white;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -61,8 +70,12 @@ h2 {
 .certifications {
 }
 .certifications div{
-    height: 200px;
     width: 200px;
+    display: flex;
+}
+.certifications h2{
+    padding: 1em;
+    padding-right: 2em;
 }
 .certifications div img {
     height: 100px;
@@ -72,12 +85,24 @@ h2 {
 }
 
 .content div {
-    background-color: #536469;
-    padding: 20px;
-    padding-left: 50px;
+    background-color: #0E131F;
+    /* padding: 1em; */
     border-radius: 20px;
-    margin: 10px;
-    color: #f2ded8;
+    margin: 1em;
+    color: white;
+    border-style: solid;
+    border-color: #6C2334;
+}
+.content h1 {
+    /* background-color: var(--BgColor); */
+    color: var(--HighlightColor);
+    padding: 0px;
+    margin: 0 auto;
+    margin-top: 4px;
+    border-radius: 20px;
+    text-align: center;
+    width: 90%;
+    align-content: center;
 }
 
 /* #ReactProjects ul {
@@ -95,6 +120,7 @@ h2 {
     display: inline;
     padding: 5px;
     cursor:pointer;
+    transition: 0.08s;
 }
 
 #quote-box {
