@@ -1,14 +1,23 @@
 # Portfolio Website
-=====
-The goal of this website is to showcase all the projects and certifications I have been working on. It will contain links to everything relevant and even incorporate web-based projects into seperate pages you can reach from the home page.
 
-Current TO-DO
------
-+ Add a navigation bar
-..* Projects
-..* Certifications
-..* Resume
-+ Add cohesive color scheme
-+ Fix .information div to have better spacing
-+ Add actual content, lol
-+ Add cool animated background
+---
+
+Portfolio website acting as a replacement for a resume that I can show people when they ask what I do. I was inspired by [https://jaydensipe.github.io](https://jaydensipe.github.io/) to create this website. One of the key differences is I intend to incorporate some of my projects into separate pages so that users can interact with what I’ve created.
+
+## Key Features
+
+---
+
+- 3 sections
+    - “About me” summarizing my goals.
+    - Projects
+    - Certifications
+- Website based projects (like the ones from freecodecamp) should be embedded as separate interactable pages into the website.
+- Clean, smooth animations
+- Contact info
+
+## Issues to solve
+
+---
+
+- “navigation” bar doesn’t properly scale for different browser sizes.
