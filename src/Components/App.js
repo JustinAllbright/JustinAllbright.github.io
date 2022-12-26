@@ -21,7 +21,7 @@ class App extends React.Component {
     render() {
         return(
             <React.Fragment>
-            <Navbar navigationLocation = {this.navigationLocation}/>
+            <Navbar navigationLocation = {this.navigationLocation} currentLocation = {this.state.CurrentTag}/>
             <p>Current selected tag: {this.state.CurrentTag}</p>
             {this.state.CurrentTag == "Calculator" && <Calculator/>}
             {this.state.CurrentTag == "PomodoroClock" && <PomodoroClock/>}

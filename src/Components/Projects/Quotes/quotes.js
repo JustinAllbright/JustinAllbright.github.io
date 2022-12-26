@@ -28,9 +28,13 @@ export default class Quotes extends React.Component {
             style={{
                 height: 10 + "%"
             }}>
+                <h1>Random Quote Generator</h1>
+                <h2>FreeCodeCamp Project</h2>
+                <div>
                 <p id="text">{QuotesList[this.state.QuoteNumber][0]}</p>
-                <p id="author">{QuotesList[this.state.QuoteNumber][1]}</p>
-                <button onClick={this.increment} id="new-quote">New Quote</button>
+                <p id="author">-{QuotesList[this.state.QuoteNumber][1]}</p>
+                </div>
+                <button onClick={this.increment} id="new-quote">Next Quote</button>
                 <a id="tweet-quote">Tweet</a>
 
             </div>
