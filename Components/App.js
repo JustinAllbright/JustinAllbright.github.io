@@ -42,11 +42,14 @@ var App = function (_React$Component) {
                 React.Fragment,
                 null,
                 React.createElement(Navbar, { navigationLocation: this.navigationLocation, currentLocation: this.state.CurrentTag }),
-                React.createElement(
-                    "p",
+                this.state.CurrentTag == "" && React.createElement(
+                    "center",
                     null,
-                    "Current selected tag: ",
-                    this.state.CurrentTag
+                    React.createElement(
+                        "p",
+                        null,
+                        "These are the projects for the FreeCodeCamp Front-end Development certification."
+                    )
                 ),
                 this.state.CurrentTag == "Calculator" && React.createElement(Calculator, null),
                 this.state.CurrentTag == "PomodoroClock" && React.createElement(PomodoroClock, null),

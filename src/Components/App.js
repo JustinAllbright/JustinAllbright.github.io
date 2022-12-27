@@ -22,7 +22,9 @@ class App extends React.Component {
         return(
             <React.Fragment>
             <Navbar navigationLocation = {this.navigationLocation} currentLocation = {this.state.CurrentTag}/>
-            <p>Current selected tag: {this.state.CurrentTag}</p>
+            {this.state.CurrentTag == "" && 
+            <center><p>These are the projects for the FreeCodeCamp Front-end Development certification.</p></center>
+            }
             {this.state.CurrentTag == "Calculator" && <Calculator/>}
             {this.state.CurrentTag == "PomodoroClock" && <PomodoroClock/>}
             {this.state.CurrentTag == "Markdown" && <Markdown/>}

@@ -19,9 +19,18 @@ var PomodoroClock = function (_React$Component) {
         key: "render",
         value: function render() {
             return React.createElement(
-                "p",
-                null,
-                "Implement this."
+                "div",
+                { id: "Pomodoro" },
+                React.createElement(
+                    "h1",
+                    null,
+                    "Pomodoro Clock"
+                ),
+                React.createElement(
+                    "h2",
+                    null,
+                    "FreeCodeCamp Project"
+                )
             );
         }
     }]);

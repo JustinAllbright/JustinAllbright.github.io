@@ -5,9 +5,10 @@ class PomodoroClock extends React.Component {
     }
     render() {
         return(
-            <p>
-                Implement this.
-            </p>
+            <div id="Pomodoro">
+                <h1>Pomodoro Clock</h1>
+                <h2>FreeCodeCamp Project</h2>
+            </div>
         )
     }
 }

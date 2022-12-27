@@ -5,9 +5,12 @@ class Drums extends React.Component {
     }
     render() {
         return(
-            <p>
-                Implement this.
-            </p>
+            <div id="drum-machine">
+                <h1>Drum Machine</h1>
+                <h2>FreeCodeCamp Project</h2>
+
+
+            </div>
         )
     }
 }

@@ -19,9 +19,18 @@ var Calculator = function (_React$Component) {
         key: "render",
         value: function render() {
             return React.createElement(
-                "p",
-                null,
-                "Implement this."
+                "div",
+                { id: "Calculator" },
+                React.createElement(
+                    "h1",
+                    null,
+                    "GUI Calculator"
+                ),
+                React.createElement(
+                    "h2",
+                    null,
+                    "FreeCodeCamp Project"
+                )
             );
         }
     }]);

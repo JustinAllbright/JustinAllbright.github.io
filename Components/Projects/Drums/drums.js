@@ -19,9 +19,18 @@ var Drums = function (_React$Component) {
         key: "render",
         value: function render() {
             return React.createElement(
-                "p",
-                null,
-                "Implement this."
+                "div",
+                { id: "drum-machine" },
+                React.createElement(
+                    "h1",
+                    null,
+                    "Drum Machine"
+                ),
+                React.createElement(
+                    "h2",
+                    null,
+                    "FreeCodeCamp Project"
+                )
             );
         }
     }]);
