@@ -12,12 +12,24 @@ var Markdown = function (_React$Component) {
     function Markdown(props) {
         _classCallCheck(this, Markdown);
 
-        return _possibleConstructorReturn(this, (Markdown.__proto__ || Object.getPrototypeOf(Markdown)).call(this, props));
+        var _this = _possibleConstructorReturn(this, (Markdown.__proto__ || Object.getPrototypeOf(Markdown)).call(this, props));
+
+        _this.state = {
+            markdown: ""
+        };
+        return _this;
     }
 
     _createClass(Markdown, [{
+        key: "updateText",
+        value: function updateText(markdown) {
+            this.setState({ markdown: markdown });
+        }
+    }, {
         key: "render",
         value: function render() {
+            var _this2 = this;
+
             return React.createElement(
                 "div",
                 { id: "Markdown-Previewer" },
@@ -30,6 +42,25 @@ var Markdown = function (_React$Component) {
                     "h2",
                     null,
                     "FreeCodeCamp Project"
+                ),
+                React.createElement(
+                    "div",
+                    null,
+                    React.createElement(
+                        "div",
+                        { id: "input" },
+                        React.createElement("textarea", {
+                            value: this.state.markdown,
+                            onChange: function onChange(x) {
+                                _this2.updateText(x.target.value);
+                            }
+                        })
+                    ),
+                    React.createElement("div", { id: "output",
+                        dangerouslySetInnerHTML: {
+                            __html: marked.parse(this.state.markdown)
+                        }
+                    })
                 )
             );
         }
