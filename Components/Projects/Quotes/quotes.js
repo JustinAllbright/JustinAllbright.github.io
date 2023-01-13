@@ -74,9 +74,10 @@ var Quotes = function (_React$Component) {
                     ),
                     React.createElement(
                         'a',
-                        { id: 'tweet-quote' },
+                        { id: 'tweet-quote', href: "http://twitter.com/intent/tweet?text=" + QuotesList[this.state.QuoteNumber][0] + " -" + QuotesList[this.state.QuoteNumber][1], 'data-show-count': 'false' },
                         'Tweet'
-                    )
+                    ),
+                    React.createElement('script', { async: true, src: 'https://platform.twitter.com/widgets.js', charset: 'utf-8' })
                 )
             );
         }

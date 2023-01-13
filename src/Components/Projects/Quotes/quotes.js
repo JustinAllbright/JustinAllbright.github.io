@@ -35,8 +35,12 @@ export default class Quotes extends React.Component {
                 <p id="author">-{QuotesList[this.state.QuoteNumber][1]}</p>
                 </div>
                 <button onClick={this.increment} id="new-quote">Next Quote</button>
-                <a id="tweet-quote">Tweet</a>
-
+                <a id= "tweet-quote" href={"http://twitter.com/intent/tweet?text=" +
+                 QuotesList[this.state.QuoteNumber][0] + " -" + QuotesList[this.state.QuoteNumber][1]
+                 } data-show-count="false">
+                Tweet
+                </a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                
             </div>
             </center>
         )
