@@ -16,20 +16,37 @@ var Drums = function (_React$Component) {
     }
 
     _createClass(Drums, [{
-        key: "render",
+        key: 'render',
         value: function render() {
+            var drumpad = [['Q', 'heater1'], ['W', 'heater2'], ['E', 'heater3'], ['A', 'heater4'], ['S', 'clap'], ['D', 'open-hh'], ['Z', 'kick-n-hat'], ['X', 'kick'], ['C', 'closed-hh']];
             return React.createElement(
-                "div",
-                { id: "drum-machine" },
+                'div',
+                null,
                 React.createElement(
-                    "h1",
+                    'h1',
                     null,
-                    "Drum Machine"
+                    'Drum Machine'
                 ),
                 React.createElement(
-                    "h2",
+                    'h2',
                     null,
-                    "FreeCodeCamp Project"
+                    'FreeCodeCamp Project'
+                ),
+                React.createElement(
+                    'center',
+                    null,
+                    React.createElement(
+                        'div',
+                        { id: 'drum-machine' },
+                        React.createElement('div', { id: 'display' }),
+                        drumpad.map(function (key) {
+                            return React.createElement(
+                                'div',
+                                { id: key, 'class': 'drum-pad' },
+                                key[0]
+                            );
+                        })
+                    )
                 )
             );
         }

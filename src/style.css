@@ -197,6 +197,36 @@ h2 {
     background-color: var(--HighlightColor);
     transition: 0.15s;
 }
+#quote-box #tweet-quote {
+    background-color: inherit;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    text-decoration: none;
+}
+#quote-box #tweet-quote:hover {
+    background-color: var(--HighlightColor);
+    transition: 0.15s;
+}
+#drum-machine {
+}
+#drum-machine .drum-pad {
+    /* background-color: var(--HighlightColor); */
+    border-style: solid;
+    border-color: black;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: none;
+    display: inline;
+}
+#drum-machine .drum-pad:hover {
+    background-color: var(--HighlightColor);
+    cursor: pointer;
+}
 
 
 
